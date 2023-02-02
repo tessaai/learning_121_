@@ -1,0 +1,158 @@
+* {
+  font-family: "Exo 2", sans-serif;
+  font-style: italic;
+  text-transform: uppercase;
+  -webkit-transition: 0.1s linear;
+  transition: 0.1s linear;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  background: url(back.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  height: 45rem;
+  width: 40rem;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 0 0 1rem #333;
+  box-shadow: 0 0 1rem #333;
+}
+
+.container form {
+  height: 90%;
+  width: 90%;
+}
+
+.container form input[type="text"] {
+  width: calc(100% - 0.5rem);
+  height: 5rem;
+  border: none;
+  outline: none;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 2.5rem;
+  padding: 0 2rem;
+  margin: 1rem 0;
+}
+
+.container form input[type="button"] {
+  border: none;
+  outline: none;
+  height: 6rem;
+  width: 8rem;
+  margin: 0.35rem;
+  background: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  color: #333;
+  font-size: 2.5rem;
+}
+
+.container form input[type="button"]:active {
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.container form input[type="button"].total {
+  width: 26rem;
+  background: rgba(255, 0, 0, 0.5);
+  color: #fff;
+}
+
+.container form input[type="button"].total:active {
+  background: rgba(0, 0, 0, 0.5);
+}
+.wrapper .button {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  float: left;
+  margin: 0 5px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover {
+  width: 200px;
+}
+.wrapper .button .icon {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1):hover .icon {
+  background: #4267b2;
+}
+.wrapper .button:nth-child(2):hover .icon {
+  background: #1da1f2;
+}
+.wrapper .button:nth-child(3):hover .icon {
+  background: #e1306c;
+}
+.wrapper .button:nth-child(4):hover .icon {
+  background: #333;
+}
+.wrapper .button:nth-child(5):hover .icon {
+  background: #ff0000;
+}
+.wrapper .button .icon i {
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover .icon i {
+  color: #fff;
+}
+.wrapper .button span {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1) span {
+  color: #4267b2;
+}
+.wrapper .button:nth-child(2) span {
+  color: #1da1f2;
+}
+.wrapper .button:nth-child(3) span {
+  color: #e1306c;
+}
+.wrapper .button:nth-child(4) span {
+  color: #333;
+}
+.wrapper .button:nth-child(5) span {
+  color: #ff0000;
+}

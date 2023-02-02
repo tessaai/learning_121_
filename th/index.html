@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../all.css" />
+    <link rel="stylesheet" href="fonts.css" />
+    <title>Calculator</title>
+    <script src="../jquery.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <form name="calculator">
+        <input type="text" name="display" />
+
+        <input
+          type="button"
+          value="1"
+          onclick="calculator.display.value += '1'"
+        />
+        <input
+          type="button"
+          value="2"
+          onclick="calculator.display.value += '2'"
+        />
+        <input
+          type="button"
+          value="3"
+          onclick="calculator.display.value += '3'"
+        />
+        <input
+          type="button"
+          value="back"
+          onclick="calculator.display.value = display.value.slice(0, -1)"
+        />
+
+        <input
+          type="button"
+          value="4"
+          onclick="calculator.display.value += '4'"
+        />
+        <input
+          type="button"
+          value="5"
+          onclick="calculator.display.value += '5'"
+        />
+        <input
+          type="button"
+          value="6"
+          onclick="calculator.display.value += '6'"
+        />
+        <input
+          type="button"
+          value="-"
+          onclick="calculator.display.value += '-'"
+        />
+
+        <input
+          type="button"
+          value="7"
+          onclick="calculator.display.value += '7'"
+        />
+        <input
+          type="button"
+          value="8"
+          onclick="calculator.display.value += '8'"
+        />
+        <input
+          type="button"
+          value="9"
+          onclick="calculator.display.value += '9'"
+        />
+        <input
+          type="button"
+          value="x"
+          onclick="calculator.display.value += '*'"
+        />
+      </form>
+    </div>
+    <div class="wrapper">
+      <div class="button">
+        <div class="icon">
+          <i class="fab fa-facebook-f"></i>
+        </div>
+        <span>Facebook</span>
+      </div>
+      <div class="button">
+        <div class="icon">
+          <i class="fab fa-twitter"></i>
+        </div>
+        <span>Twitter</span>
+      </div>
+      <div class="button">
+        <div class="icon">
+          <i class="fab fa-instagram"></i>
+        </div>
+        <span>Instagram</span>
+      </div>
+      <div class="button">
+        <div class="icon">
+          <i class="fab fa-github"></i>
+        </div>
+        <span>Github</span>
+      </div>
+      <div class="button">
+        <div class="icon">
+          <i class="fab fa-youtube"></i>
+        </div>
+        <span>YouTube</span>
+      </div>
+    </div>
+  </body>
+</html>
